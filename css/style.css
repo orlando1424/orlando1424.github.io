@@ -309,6 +309,63 @@ h6 {font-size: 16px;}
     font-size: 14px;
 }
 
+.experience-wrapper {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.experience-wrapper h3 {
+    text-align: center;
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: flex-start;
+    border-bottom: 1px solid var(--borderColor);
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+}
+
+.experience-header h4,
+.experience-header p {
+    margin: 0 0 8px 0;
+}
+
+.experience-header span {
+    color: var(--secondaryText);
+    font-family: 'Roboto Mono', monospace;
+    white-space: nowrap;
+}
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.experience-card {
+    border: 1px solid var(--borderColor);
+    background-color: var(--secondaryColor);
+    padding: 20px;
+    border-radius: 5px;
+    -webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+    box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+}
+
+.experience-card h6 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.experience-card p {
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
 
 .contact-form {
     display: block;
@@ -328,6 +385,10 @@ h6 {font-size: 16px;}
 .contact-form textarea {
     min-height: 100px;
     font-size: 14px;
+}
+
+.hidden {
+    display: none;
 }
 
 .input-field {
@@ -379,5 +440,17 @@ h6 {font-size: 16px;}
 
 .right-column{
     justify-content: center;
+}
+
+.experience-header {
+    display: block;
+}
+
+.experience-header span {
+    display: block;
+}
+
+.experience-grid {
+    grid-template-columns: 1fr;
 }
 }
